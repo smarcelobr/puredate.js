@@ -52,6 +52,29 @@
 </div>
 </div>
 
+<div class="panel panel-primary">
+ <div class="panel-heading">getLastDayOfMonth(...)</div>
+ <div class="panel-body">
+<p>Code:</p>
+<pre>
+ var today = PureDate();
+ var lastDayofMonth = today.getLastDayOfMonth();
+ document.write('Today is: '+today.year+'-'+today.month+'-'+today.day);
+ document.write('\nLast day of this month is: '+lastDayofMonth.year+'-'+lastDayofMonth.month+'-'+lastDayofMonth.day);
+</pre>
+<p>Result:</p>
+<pre>
+<script>
+ var today = PureDate();
+ var lastDayofMonth = today.getLastDayOfMonth();
+ document.write('Today is: '+today.year+'-'+today.month+'-'+today.day);
+ document.write('\nLast day of this month is: '+lastDayofMonth.year+'-'+lastDayofMonth.month+'-'+lastDayofMonth.day);
+</script>
+</pre>
+<p>Note: puredate objects are <mark>immutable!</mark></p>
+</div>
+</div>
+
 </div> <!--container-->
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
