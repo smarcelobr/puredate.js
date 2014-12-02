@@ -1,5 +1,12 @@
 {
   "name": "puredate",
-  "version": "1.0.0",
-  "homepage": "http://github.com/smarcelobr/puredate.js"
+  "description": "Now it's easy to manipulate dates in javascript without worrying about time zones and time.",
+    "main":"puredate.js",
+    "license":"MIT",
+    "keywords":["date","addMonths","getLastDayOfMonth","addDays"],
+    "authors":"Sergio M C Figueiredo",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/smarcelobr/puredate.js.git"
+    }
 }
