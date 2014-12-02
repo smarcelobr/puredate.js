@@ -1,6 +1,6 @@
 {
-  "name": "puredate",
-  "description": "Now it's easy to manipulate dates in javascript without worrying about time zones and time.",
+		"name": "puredate",
+  	"description": "Date without time data. Now it's easy to manipulate dates in javascript without worrying about time zones and time.",
     "main":"puredate.js",
     "license":"MIT",
     "keywords":["date","addMonths","getLastDayOfMonth","addDays"],
@@ -9,5 +9,5 @@
         "type":"git",
         "url":"https://github.com/smarcelobr/puredate.js.git"
     },
-    "ignore":""
+    "ignore":["demo/"]
 }
