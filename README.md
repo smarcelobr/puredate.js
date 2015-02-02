@@ -23,11 +23,11 @@ Syntax
 ------
 
 ```js
-PureDate(in int year, in int month, in int day)
+var puredate = PureDate.ymd(in int year, in int month, in int day);
    or
-PureDate(in int gDate)
+var puredate = PureDate.gdate(in int gDate);
    or
-PureDate()
+var puredate = PureDate.today();
 ```
 
 Examples
@@ -36,16 +36,41 @@ Examples
 ### Today date
 
 ```js
-var today = PureDate();
+var today = PureDate.today();
+```
+
+### Specific Date
+
+```js
+var specDate = PureDate.ymd(2012,PureDate.JANUARY, 1);
+```
+
+### Reading properties
+
+```js
+var today = PureDate.today();
+var year = today.year;
+var month = today.month;
+var day = today.day;
+
 ```
 
 ### adding a month
 
 ```js
-var today = PureDate();
+var today = PureDate.today();
 var nextMonth = today.addMonth(1);
 ```
+Note: today instance is not modified. The PureDate object are immutable.
 
+### day of week
+
+```js
+var today = PureDate.today();
+if (today.dayofweek() === PureDate.SUNDAY){
+   alert("good sunday");
+}
+```
 Note: today instance is not modified. The PureDate object are immutable.
 
 require.js
@@ -58,9 +83,14 @@ Description
 -----------
 This code uses [gdate algorithm][1] to convert day, month and year in a integer number thats is de day number since March, 1, year 0. You can read the gDate value and store it in a database. To restore this integer in a date is easy:
 ```js
-var gdate = 750455; // TODO correct!
+var gdate = 735935;   // Feb, 1, 2015
 var date = PureDate(gdate);
 ```
+
+Index of Months
+----------------
+- January is month 1;
+- December is month 12;
 
 Limitations
 -----------
