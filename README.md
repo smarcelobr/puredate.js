@@ -6,6 +6,21 @@ Now is very easy manipulate date without time in javascript.
 puredate.js serves to manipulate simple dates in javascript. This is very useful when you don't need worry about
 time and timezone. The PureDate object is ideal to manipulate birthdays and other dates that are recorded in documents.
 
+Oficial webpage and examples: http://sergio.figueiredo.nom.br/puredate
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## CHANGELOG
+
+Check [Releases](https://github.com/smarcelobr/puredate.js/releases)
+
+
 Instalation
 -----------
 There are 2 ways for instalation:
@@ -28,6 +43,20 @@ var puredate = PureDate.ymd(in int year, in int month, in int day);
 var puredate = PureDate.gdate(in int gDate);
    or
 var puredate = PureDate.today();
+```
+
+Method list:
+```js
+var today = PureDate.today();
+var tomorrow = today.addDays(1); // add 1 day 
+var nextMonth = today.addMonths(1); // add 1 month. 
+var dow = today.dayOfWeek() // return 0 for Sunday , 1 for Monday, ... 6 for Saturday
+var isLeapYear = today.isLeapYear() // true if this date is in a leap year.
+var firstDayOfMonth = today.getFirstDayOfMonth() // returns day 1 of same month and year 
+var firstDayofYear= today.getFirstDayOfYear() // returns day 1 and month 1(january) of same year
+var lastDayOfMonth = today.getLastDayOfMonth() // returns the last day of month.
+var lastDayOfYear = today.getLastDayOfYear() // returns the 31 of december of today's year.
+// note: today variable value remains immutable after all methods execution.
 ```
 
 Examples
