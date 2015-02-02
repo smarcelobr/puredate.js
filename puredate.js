@@ -85,9 +85,7 @@ var PureDate = PureDate
             var newYear = ~~(gM/12);
             var newMonth = (gM%12);
     
-            var gD=this.g(newYear, newMonth, this.day);
-    
-            var newPureDate = PureDateFromG(gD);
+            var newPureDate = PureDateFromYMD(newYear, newMonth, this.day);
             if (newPureDate.month!=newMonth) {
                 newPureDate=newPureDate.addDays(-newPureDate.day);
             }
