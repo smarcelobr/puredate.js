@@ -45,6 +45,17 @@ var puredate = PureDate.gdate(in int gDate);
 var puredate = PureDate.today();
 ```
 
+Property list:
+```js
+var today = PureDate.today();
+document.write('Today is: '+today.year+'-'+today.month+'-'+today.day);
+document.write('gDate : '+today.gdate);
+
+/* note: gdate is a integer number of days since March, 1  /0000
+  you can use gdate number to store puredate in a database or send to network.
+*/
+```
+
 Method list:
 ```js
 var today = PureDate.today();
@@ -57,6 +68,31 @@ var firstDayofYear= today.getFirstDayOfYear() // returns day 1 and month 1(janua
 var lastDayOfMonth = today.getLastDayOfMonth() // returns the last day of month.
 var lastDayOfYear = today.getLastDayOfYear() // returns the 31 of december of today's year.
 // note: today variable value remains immutable after all methods execution.
+```
+
+Constant list:
+```js
+// months
+PureDate.JANUARY:1,
+PureDate.FEBRUARY:2,
+PureDate.MARCH:3,
+PureDate.APRIL:4,
+PureDate.MAY:5,
+PureDate.JUNE:6,
+PureDate.JULY:7,
+PureDate.AUGUST:8,
+PureDate.SEPTEMBER:9,
+PureDate.OCTOBER:10,
+PureDate.NOVEMBER:11,
+PureDate.DECEMBER:12,
+// weekdays
+PureDate.SUNDAY:0,
+PureDate.MONDAY:1,
+PureDate.TUESDAY:2,
+PureDate.WEDNESDAY:3,
+PureDate.THURSDAY:4,
+PureDate.FRIDAY:5,
+PureDate.SATURDAY:6
 ```
 
 Examples
@@ -96,7 +132,7 @@ Note: today instance is not modified. The PureDate object are immutable.
 
 ```js
 var today = PureDate.today();
-if (today.dayofweek() === PureDate.SUNDAY){
+if (today.dayOfWeek() === PureDate.SUNDAY){
    alert("good sunday");
 }
 ```
