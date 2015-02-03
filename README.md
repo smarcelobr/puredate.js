@@ -68,7 +68,7 @@ The simplicity of this code costs some limitations for their use.
 
 This object only refers to a Gregorian Calendar, so this will work fine for any date since the adoption of Gregoria Calendar. Warning: each country has a diferent date of [adotion of this calendar][2]. The older countries adopt this calendar at Oct, 15, 1582 (Spain, Portugal, Italy, Polish).
 
-That said, if you need to know _precisaly_ how many days have passed of arrival of the Portuguese fleet in Brazil ([April, 22, 1500 year][4]), you can not use this date, because the portugueses didn't use Gregorian Calendar at that time.
+That said, if you need to know _precisaly_ how many days have passed of first arrival of the Portuguese fleet in Brazil ([April, 22, 1500 year][4]), you can not use this date, because the portugueses didn't use Gregorian Calendar at that time.
 
   [1]: http://alcor.concordia.ca/~gpkatch/gdate-algorithm.html "gdate algorithm (Concordia University/CA)"
   [2]: http://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar "Adoption of Gregoria Calendar (wikipedia)"
