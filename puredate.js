@@ -27,13 +27,21 @@ var PureDate = PureDate
         }
 
         function PureDateInstance(year, month, day, gDate) {
-            Object.defineProperties(this, {
-                /* public read-only properties */
-                'day':{value:day,writable:false},
-                'month':{value:month,writable:false},
-                'year':{value:year,writable:false},
-                'gdate':{value:gDate,writable:false}
-            });
+            try {
+                Object.defineProperties(this, {
+                    /* public read-only properties */
+                    'day':{value:day,writable:false},
+                    'month':{value:month,writable:false},
+                    'year':{value:year,writable:false},
+                    'gdate':{value:gDate,writable:false}
+                });
+            } catch (e) {
+                /* Object.defineProperties doesn't work in old IEs (before version 9) */
+                this.day = day;
+                this.month = month;
+                this.year = year;
+                this.gdate = gDate;
+            }
         }
 
         var PureDateFromG = function (gDate) {
