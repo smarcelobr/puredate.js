@@ -1,0 +1,14 @@
+{
+  "name": "puredate",
+  "version": "1.0.0",
+  "description": "Date without time data. Now it's easy to manipulate dates in javascript without worrying about time zones and time.",
+  "keywords": ["puredate","date", "date-manipulation"],
+  "author": "Sergio Marcelo Couto Figueiredo <smarcelo_br@yahoo.com.br> (http://sergio.figueiredo.nom.br)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smarcelobr/puredate.js.git"
+  },
+  "main": "puredate.js",
+  "files": ["puredate.js"]
+}
